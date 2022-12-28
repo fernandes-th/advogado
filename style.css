@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.largura-conteudo {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.paddings {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header {
+    padding: 15px 0px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+main {
+    background-image: url('capa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    padding-top: 50px;
+    text-align: right;
+}
+
+.caixa-main {
+    width: 250px;
+    text-align: right;
+}
+
+.galeria-img {
+    padding-top: 10px;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    
+}
+
+.galeria-img img {
+    width: calc((100%/3) - 16px);
+}
+
+.compromisso {
+    margin-top: 10px;
+    text-indent: 5px;
+    border-left: 4px solid lightgray;
+}
+
+.intervalo {
+    background-image: url('fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.box-intervalo {
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    width: 150px;
+    font-size: 24px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.lista {
+    margin-top: 15px;
+}
+
+.lista li {
+    margin-left: 25px;
+}
+
+@media (max-width: 1000px) {
+    .largura-conteudo {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 680px){
+    main {
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .box-main {
+        background-color: #fff;
+        max-width: 300px;
+        text-align: center;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .galeria-img {
+        overflow-x: auto;
+    }
+
+    .galeria-img img {
+        width: 200px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+}
